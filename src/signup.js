@@ -1,16 +1,15 @@
 import React from 'react';
 import './desforlog.css'
 
-function Login() {
+function Signup() {
     return (
       <div className="container">
          <div className="login">
-          <h2>Login</h2>
+          <h2>signup</h2>
          </div>
          <div className="emial"></div>
          <div className="password"></div>
       </div>
     );
   }
-  
-  export default Login;
+  export default Signup;
