@@ -10,7 +10,7 @@
 a{
     text-decoration: none;
     font-size: 1rem;
-    color:#000;
+    color:var(--secondary);
     font-style: oblique;
     font-weight: 500;
 }
@@ -21,12 +21,13 @@ a{
   justify-content: center;
   align-items: center;
   min-width: 300px;
+  background-color: var(--imp);
 }
 
 .container {
   width: 55vb;
   height: 60vh;
-  background-color: red;
+  background-color: var(--primary);
   border-radius: 10%;
   
 }
@@ -51,7 +52,7 @@ input:focus{
     outline: none;
 }
 ::placeholder{
-    color: #000;
+    color: var(--secondary);
 }
 input[type="email"],
 input[type="password"] {
@@ -60,23 +61,20 @@ input[type="password"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid black;
-  /* border-radius: 0% 15% 0% 15%; */
+  border-bottom: 2px solid var(--secondary);
+  
+  
   font-size: 100%;
   padding: 4%;
   vertical-align: auto;
   background: transparent;
-  color: #fff;
+  color: var(--imp);
 }
 
 .forgot-password {
   margin: 4.5em;
 }
 
-/* .dont-have-account{
-    position: relative;
-    right: auto;
-} */
 form {
   height: 100%;
   width: 100%;
@@ -94,7 +92,19 @@ input[type="submit"] {
   height: 2em;
   width: 50%;
   font-size: 1.3rem;
-  background-color: var(--text-colors);
+  background-color: var(--imp);
   border-radius: 8px;
   font-weight: 550;
+}
+input[type="submit"]:hover{
+    
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+}
+.dont-have-account:hover{
+    text-decoration: underline;
 }
